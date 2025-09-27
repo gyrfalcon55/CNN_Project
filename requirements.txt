@@ -9,3 +9,7 @@ uvicorn
 fastapi
 sqlalchemy
 python-multipart
+langchain-ollama
+pydantic
+langchain
+jinja2

@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container-fluid {
+    background-color: #1a8a3a;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 24px;
+    line-height: 60px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.background-image {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* full height */
+    background-image: url("../media/background3.jpg");
+    background-size: cover;
+    /* scale image to cover screen */
+    background-position: center;
+    /* center it */
+    background-repeat: no-repeat;
+    /* don’t tile */
+    font-family: Arial, sans-serif;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 50%;
+}
+
+.boxex {
+    display: flex;
+    justify-content: space-evenly;
+    /* put them in the middle */
+    align-items: center;
+    gap: 30px;
+    /* space between input and output box */
+}
+
+.input-box,
+.output-box {
+    margin-top: 10%;
+    height: 60vh;
+    width: 35vw;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.chatbot {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 18%;
+    width: 65%;
+    height: 70%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.querybox {
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+}
+
+.user-message {
+    width: 100%;
+    height: 50%;
+    resize: vertical;
+}
+
+.text-area {
+    margin-left: 15%;
+    width: 70%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    /* user can resize vertically */
+    font-size: 14px;
+}
+
+
+.chatbot-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 45%;
+}
+
+.message-box {
+    margin-top: 2%;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+}
+
+.output-response {
+    font-size: 18px;
+    color: #333;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+@media screen and (max-width: 1500px) {
+    .background-image {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .boxex {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .input-box,
+    .output-box {
+        width: 80vw;
+        height: 40vh;
+    }
+}
+
+.btn {
+    background-color: #1a8a3a;
+    color: rgb(215, 215, 215);
+    border: none;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
