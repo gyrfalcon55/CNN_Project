@@ -39,7 +39,7 @@ This project focuses on Building CNN model to classify images of 90 different cl
 
 ---
 
-## Using the Model of local system
+## Using the Model in local system
 
 - Go to `models` folder and copy the path of required model.
 - Open a new jupyter notebook and import the dataset 
